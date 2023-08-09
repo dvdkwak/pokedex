@@ -1,0 +1,10 @@
+entity.pasta_entity.edit_form:
+  route_name: entity.pasta_entity.edit_form
+  group: pasta_entity
+  title: 'Edit'
+
+entity.pasta_entity.delete_form:
+  route_name: entity.pasta_entity.delete_form
+  group: pasta_entity
+  title: 'Delete'
+  weight: 10

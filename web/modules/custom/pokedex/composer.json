@@ -1,0 +1,21 @@
+{
+    "name": "drupal/pokedex",
+    "description": "Drupal module to test pokemon tcg api",
+    "type": "drupal-module",
+    "version": "1.0",
+    "require": {
+        "pokemon-tcg/pokemon-tcg-sdk-php": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\Pokedex\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Kwakernaak",
+            "email": "dvdkwak@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

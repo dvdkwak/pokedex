@@ -1,0 +1,13 @@
+uuid: f3b63fe3-6cfd-4e92-9550-93244287e7df
+langcode: en
+status: true
+dependencies:
+  module:
+    - poke_collection
+_core:
+  default_config_hash: OFuTKoOM9Ux60UmhVhgsc6P1_6ICELZ0wgulXTT_H2w
+id: pokecard_delete_action
+label: 'Delete pokecards'
+type: pokecard
+plugin: 'entity:delete_action:pokecard'
+configuration: {  }

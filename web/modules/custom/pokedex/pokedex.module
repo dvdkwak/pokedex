@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ *
+ * This file defines all hooks etc for the pokedex module.
+ */
+
+
+/**
+ * Implements hook_theme()
+ *
+ * Defines custom templates.
+ */
+function pokedex_theme($existing, $type, $theme, $path)
+{
+  return [
+    'pokecard_detail' => [
+      'variables' => [
+        'card' => NULL,
+        'content' => NULL
+      ]
+    ]
+  ];
+}

@@ -1,0 +1,13 @@
+type: module
+name: poke_collection
+description: 'Use this module to add pokemon cards to your collection!'
+package: Pokedex
+core_version_requirement: ^9 || ^10
+php: 8.2
+version: '1.0'
+tags:
+ - pokemon
+ - TCG
+ - Card List
+dependencies:
+  - pokedex

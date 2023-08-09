@@ -1,0 +1,47 @@
+pokedex.settings:
+  path: '/admin/config/pokedex'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Pokedex settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+pokedex.form:
+  path: '/admin/config/pokedex/settings'
+  defaults:
+    _form: '\Drupal\pokedex\Form\PokedexForm'
+    _title: 'Pokedex settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+pokedex.cards:
+  path: '/pokedex'
+  defaults:
+    _controller: '\Drupal\pokedex\Controller\PokedexController::Gallery'
+    _title: 'Pokedex main page to show all cards within range.'
+  requirements:
+    _permission: 'access content'
+
+pokedex.gallery:
+  path: '/pokedex/{type}/{set_name}/{page_offset}'
+  defaults:
+    _controller: '\Drupal\pokedex\Controller\PokedexController::Gallery'
+    _title: 'Pokedex browser'
+  requirements:
+    _permission: 'access content'
+
+pokedex.gallery_nextpage:
+  path: '/pokedex/{page_offset}'
+  defaults:
+    _controller: '\Drupal\pokedex\Controller\PokedexController::Gallery'
+    _title: 'Pokedex browser'
+  requirements:
+    _permission: 'access content'
+
+pokedex.card:
+  path: '/pokemon/{id}'
+  defaults:
+    _controller: '\Drupal\pokedex\Controller\PokedexController::Card'
+    _title: 'Showcase a single card.'
+  requirements:
+    _permission: 'access content'

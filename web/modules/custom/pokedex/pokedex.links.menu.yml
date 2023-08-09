@@ -1,0 +1,11 @@
+pokedex.form:
+  title: 'Pokedex settings'
+  description: 'Tweak the pokedex settings.'
+  route_name: pokedex.form
+  parent: 'pokedex.settings'
+
+pokedex.settings:
+  title: 'Pokedex'
+  route_name: pokedex.settings
+  description: 'Configure pokedex.'
+  parent: system.admin_config

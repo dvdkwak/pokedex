@@ -1,0 +1,5 @@
+entity.pasta_entity.collection:
+  title: 'Pasta entities'
+  description: 'List of pasta entities.'
+  route_name: entity.pasta_entity.collection
+  parent: system.admin_content

@@ -1,0 +1,18 @@
+entity.pasta_entity.view:
+  title: 'View'
+  route_name: entity.pasta_entity.canonical
+  base_route: entity.pasta_entity.canonical
+entity.pasta_entity.edit_form:
+  title: 'Edit'
+  route_name: entity.pasta_entity.edit_form
+  base_route: entity.pasta_entity.canonical
+entity.pasta_entity.delete_form:
+  title: 'Delete'
+  route_name: entity.pasta_entity.delete_form
+  base_route: entity.pasta_entity.canonical
+  weight: 10
+entity.pasta_entity.collection:
+  title: 'Pasta entities'
+  route_name: entity.pasta_entity.collection
+  base_route: system.admin_content
+  weight: 10

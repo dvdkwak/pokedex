@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * hook_preprocess_HOOK()
+ */
+function poke_collection_preprocess_pokecard_detail(&$variables, $hook)
+{
+  $form = \Drupal::formBuilder()->getForm('Drupal\poke_collection\Form\AddPokeCardForm');
+  $variables['content']['add_card_button'] = $form;
+} // end of hook_preprocess_HOOK

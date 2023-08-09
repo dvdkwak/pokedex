@@ -1,0 +1,11 @@
+administer pasta_entity:
+  title: 'Administer pasta entities'
+  restrict access: true
+view pasta_entity:
+  title: 'View pasta entity'
+edit pasta_entity:
+  title: 'Edit pasta entity'
+delete pasta_entity:
+  title: 'Delete pasta entity'
+create pasta_entity:
+  title: 'Create pasta entity'

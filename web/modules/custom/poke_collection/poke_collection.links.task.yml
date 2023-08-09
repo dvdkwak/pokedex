@@ -1,0 +1,18 @@
+entity.pokecard.view:
+  title: 'View'
+  route_name: entity.pokecard.canonical
+  base_route: entity.pokecard.canonical
+entity.pokecard.edit_form:
+  title: 'Edit'
+  route_name: entity.pokecard.edit_form
+  base_route: entity.pokecard.canonical
+entity.pokecard.delete_form:
+  title: 'Delete'
+  route_name: entity.pokecard.delete_form
+  base_route: entity.pokecard.canonical
+  weight: 10
+entity.pokecard.collection:
+  title: 'Pokecards'
+  route_name: entity.pokecard.collection
+  base_route: system.admin_content
+  weight: 10

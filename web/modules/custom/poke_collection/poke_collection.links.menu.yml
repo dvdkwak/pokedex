@@ -1,0 +1,5 @@
+entity.poke_collection.collection:
+  title: 'Pokecards'
+  description: 'List of pokecards.'
+  route_name: entity.pokecard.collection
+  parent: system.admin_content

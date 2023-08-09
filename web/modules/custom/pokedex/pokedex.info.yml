@@ -1,0 +1,11 @@
+type: module
+name: Pokedex
+description: 'Functionality to browse the Pokemon TCG Api.'
+package: Pokedex
+core_version_requirement: ^9 || ^10
+php: 8.2
+version: '1.0'
+configure: pokedex.form
+tags:
+ - pokemon
+ - TCG

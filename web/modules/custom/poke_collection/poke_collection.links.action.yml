@@ -1,0 +1,6 @@
+# This adds an 'add pokecard' on the collection page.
+# pokecard.add_form:
+#   title: 'Add Pokecard'
+#   route_name: entity.pokecard.add_form
+#   appears_on:
+#     - entity.pokecard.collection

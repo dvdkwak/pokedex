@@ -1,0 +1,5 @@
+pasta_entity.add_form:
+  title: 'Add pasta entity'
+  route_name: entity.pasta_entity.add_form
+  appears_on:
+    - entity.pasta_entity.collection

@@ -1,0 +1,11 @@
+administer pokecard:
+  title: 'Administer pokecards'
+  restrict access: true
+view pokecard:
+  title: 'View pokecard'
+edit pokecard:
+  title: 'Edit pokecard'
+delete pokecard:
+  title: 'Delete pokecard'
+create pokecard:
+  title: 'Create pokecard'

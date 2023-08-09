@@ -1,0 +1,5 @@
+name: 'pasta_entity'
+type: module
+description: 'A module to show how a custom content entity is added with the drush boilerplate.'
+package: Custom
+core_version_requirement: ^10

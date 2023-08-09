@@ -1,0 +1,10 @@
+pokedex.settings:
+  type: config_object
+  label: 'Pokedex settings'
+  mapping:
+    policy_library:
+      type: mapping
+      mapping:
+        pokedex_settings:
+          type: text
+          label: 'Pokedex settings'
