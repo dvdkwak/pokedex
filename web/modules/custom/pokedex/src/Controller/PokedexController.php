@@ -57,8 +57,6 @@ class PokedexController extends ControllerBase
       'supertype' => $type
     ])->page($page)->pageSize($pageSize)->pagination();
 
-    dump($pagination);
-
     // Setting up render array.
     $render = [
       'search' => $form
@@ -71,18 +69,28 @@ class PokedexController extends ControllerBase
       ];
     }
 
-    // Adding pagination buttons
+    // Adding pagination buttons.
+    // Previous page link.
     if($page > 0) {
       $previousPage = '<a href="'. $page-1 .'">Previous</a>';
     } else {
       $previousPage = '';
     }
-    dump($pagination->getTotalCount() % $pageSize);
-    // if($pagination->getTotalCount() % $pageSize == 0) {
 
-    // }
+    // Next page link.
+    if($page <= ($pagination->getTotalCount() / $pagination->getPageSize())) {
+      if($page <= 1) {
+        $nextPage = '<a href="2">Next</a>';
+      } else {
+        $nextPage = '<a href="' . $page+1 . '">Next</a>';
+      }
+    } else {
+      $nextPage = '';
+    }
+
+    // Rendering the links
     $render[] = [
-      '#markup' => $previousPage . '<a href="'. $page+1 .'">Next</a>'
+      '#markup' => $previousPage . $nextPage
     ];
 
     return $render;
